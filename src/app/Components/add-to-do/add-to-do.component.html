@@ -1,0 +1,16 @@
+<div class="container-fluid mx-5" style="width: 50%;">
+    <h4>Add New ToDo</h4>
+    <form #f="ngForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" aria-describedby="emailHelp" [(ngModel)]="title" name="title">
+            <div id="emailHelp" class="form-text">Enter the Title</div>
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Description</label>
+            <input type="text" class="form-control" id="desc" aria-describedby="emailHelp" [(ngModel)]="desc" name="desc">
+            <div id="emailHelp" class="form-text">Enter the description</div>
+        </div>
+        <button type="submit" class="btn btn-sm btn-primary">Add</button>
+    </form>
+</div>
